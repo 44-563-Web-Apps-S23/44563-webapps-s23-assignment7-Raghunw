@@ -124,15 +124,15 @@
         return
       }
       else {
-        let a = ids[position]
+        let id = ids[position]
         if (position == mouseLocation) {
-          document.getElementById(a).src = "Mouse.jpg"
+          document.getElementById(id).src = "Mouse.jpg"
         }
         else if (position == catLocation) {
-          document.getElementById(a).src = "tiger.jpg"
+          document.getElementById(id).src = "tiger.jpg"
         }
         else {
-          document.getElementById(a).src = "grass.jpg"
+          document.getElementById(id).src = "grass.jpg"
         }
         checkCount++
         penalty++
@@ -154,7 +154,7 @@
 
     function help() {
         var MouseRowValue = parseInt(mouseLocation / 4) ;
-        var MouseColvalue = mouseLocation % 6; 
+        var MouseColValue = mouseLocation % 6; 
         var columnValue = lastCheck % 6 ;
         var catRowValue = parseInt(catLocation / 4) ;
         var catColumnValue = catLocation % 6;
